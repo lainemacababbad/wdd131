@@ -1,0 +1,59 @@
+@import url("https://use.typekit.net/pao3byg.css");
+
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #283618;
+  background-color: #fefae0;
+}
+
+header {
+  color: #283618;
+  background-color: #dda15e;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav li a {
+  color: #283618;
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+}
+
+.card {
+  border: 2px solid #3d405b;
+  box-shadow: 5px 5px 2.5px #283618;
+  padding: 25px;
+  margin: 10px;
+}
+
+.card h2 {
+    background-color: #dda15e;
+    color: #283618;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+footer {
+  color: #283618;
+  background-color: #dda15e;
+  text-align: center;
+  padding: 20px;
+}
