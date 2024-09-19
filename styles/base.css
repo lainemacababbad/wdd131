@@ -5,18 +5,19 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #283618;
-  background-color: #fefae0;
+  background-color: #fcfafa;
 }
 
 header {
-  color: #283618;
-  background-color: #dda15e;
+  color: #fcfafa;
+  background-color: #6e8387;
   text-align: center;
 }
 
 nav {
   display: flex;
   justify-content: center;
+  background-color: #a4b8c4;
 }
 
 nav li {
@@ -33,7 +34,7 @@ nav li a {
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 10px;
+  background-color: #fcfafa;
 }
 
 .card {
@@ -41,19 +42,20 @@ main {
   box-shadow: 5px 5px 2.5px #283618;
   padding: 25px;
   margin: 10px;
+  background-color: #c8d3d5;
 }
 
 .card h2 {
-    background-color: #dda15e;
-    color: #283618;
+    background-color: #6e8387;
+    color: #fcfafa;
     font-weight: bold;
     padding: 5px;
     text-align: center;
 }
 
 footer {
-  color: #283618;
-  background-color: #dda15e;
+  color: #fcfafa;
+  background-color: #6e8387;
   text-align: center;
   padding: 20px;
 }
