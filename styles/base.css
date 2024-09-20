@@ -24,11 +24,20 @@ nav li {
   list-style: none;
   display: inline-block;
   padding: 0 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav li:hover {
+  transform: scale(1.2);
 }
 
 nav li a {
   color: #283618;
   text-decoration: none;
+}
+
+nav li a:hover {
+  color: #fcfafa;
 }
 
 main {
@@ -45,11 +54,27 @@ main {
   background-color: #c8d3d5;
 }
 
-.card h2 {
-    background-color: #6e8387;
-    color: #fcfafa;
-    font-weight: bold;
-    padding: 5px;
+#about, #resources {
+  background-color: #6e8387;
+  color: #fcfafa;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
+
+#about-me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+#country {
+    border-bottom: 1px solid #6e8387;
     text-align: center;
 }
 
