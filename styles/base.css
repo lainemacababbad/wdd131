@@ -12,6 +12,7 @@ header {
   color: #fcfafa;
   background-color: #6e8387;
   text-align: center;
+  padding-top: 20px;
 }
 
 nav {
@@ -38,6 +39,7 @@ nav li a {
 
 nav li a:hover {
   color: #fcfafa;
+  text-decoration: underline;
 }
 
 main {
@@ -69,7 +71,7 @@ main {
 }
 
 img {
-  width: 50%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -79,8 +81,14 @@ img {
 }
 
 footer {
-  color: #fcfafa;
-  background-color: #6e8387;
-  text-align: center;
-  padding: 20px;
+    color: #fcfafa;
+    background-color: #6e8387;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#lastModified {
+    font-style: italic;
+    color: #d1d1d1;
 }
