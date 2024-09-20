@@ -80,6 +80,17 @@ img {
     text-align: center;
 }
 
+#country-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+#country-info img {
+    max-width: 100%;
+    height: auto;
+  }
+
 footer {
     color: #fcfafa;
     background-color: #6e8387;
