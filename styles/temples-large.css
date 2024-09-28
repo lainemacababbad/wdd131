@@ -21,17 +21,7 @@
 
     nav a {
         padding: 0 10px;
-        text-align: center;
-        color: #264653;
-        text-decoration: none;
-        font-weight: bold;
         padding: 10px;
-    }
-
-    nav a:hover {
-        background-color: #e76f51;
-        color: white;
-        border-radius: 4px;
     }
 
     main {

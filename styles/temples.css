@@ -18,7 +18,7 @@ nav {
     display: none;
     flex-direction: column;
     list-style: none;
-    background-color: #f4f1de;
+    background-color: white;
     color: #333;
     position: absolute;
     top: 3rem;
@@ -36,9 +36,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #e76f51;
+    background-color: #264653;
     color: white;
-    border-radius: 4px;
 }
 
 .menu {
