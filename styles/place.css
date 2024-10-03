@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+body h1 {
+  font-size: 44px;
+  text-align: center;
+  background-color: #0038A8;
+  color: #f7f4e9;
+  padding: 20px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+picture img {
+  width: 100%;
+}
+
+.hero-text {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.hero-text h2 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-text p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333333;
+}
+
+.hero-text-data p,
+.hero-text-weather p {
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  background-color: #C8102E;
+  color: #f7f4e9;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .hero-text {
+    padding: 0;
+  }
+  
+  .hero-image {
+    position: relative;
+  }
+
+  .hero-text-data {
+    position: absolute;
+    top: 10%;
+    left: 16px;
+    background-color: rgba(255, 255, 0, 0.75);;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .hero-text-data h2, .hero-text-weather h2 {
+    text-align: left;
+    margin: -10px -20px 10px -20px;
+    padding: 10px 20px;
+    background-color: #0038A8;
+    color: white;
+  }
+
+  .hero-text-weather {
+    position: absolute;
+    bottom: 10%;
+    right: 16px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    border-radius: 8px;
+  }
+}

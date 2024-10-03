@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Lalaine Macababbad</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Lalaine Macababbad | W03 Assignment" />
+    <meta name="author" content="Lalaine Macababbad" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Philippines</h1>
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/tarsier-mobile.jpg" media="(min-width: 1200px)">
+                <source srcset="images/tarsier.jpg" media="(min-width: 500px)">
+                <img src="images/tarsier.jpg" alt="Tarsier">
+            </picture>
+            <div class="hero-text">
+                <div class="hero-text-data">
+                    <h2>Data</h2>
+                    <p>Area: 4,821 square kilometers</p>
+                    <p>Population: 1.4 million</p>
+                    <p>Capital: Tagbilaran City</p>
+                    <p>Language: Cebuano, Filipino, English</p>
+                    <p>Currency: Philippine Peso (PHP)</p>
+                    <p>Time Zone: Philippine Time (PHT), UTC +8</p>
+                    <p>Calling Code: +63 38 (for landlines)</p>
+                    <p>Internet TLD: .ph</p>
+                </div>
+                <div class="hero-text-weather">
+                    <h2>Weather</h2>
+                    <img src="https://placehold.jp/150x150.png" alt="Weather Icon">
+                    <p>Temperature: 29°C</p>
+                    <p>Conditions: Mostly Sunny</p>
+                    <p>Wind: 10 km/h (6 mph) from the East</p>
+                    <p>Wind Chill: </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> | Lalaine Macababbad |
+            Philippines/Canada
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
