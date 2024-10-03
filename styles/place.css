@@ -1,14 +1,23 @@
+/* These are the colors used */
+:root {
+    --header-background-color: #0038A8;
+    --footer-background-color: #C8102E;
+    --background-color: #f4f4f4;
+    --hero-text-background: #ffffff;
+    --text-color: #333333;
+    --footer-text-color: #f7f4e9;
+}
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
 }
 
 header h1 {
   font-size: 44px;
   text-align: center;
-  background-color: #0038A8;
-  color: #f7f4e9;
+  background-color: var(--header-background-color);
+  color: var(--background-color);
   padding: 20px;
   margin: 0;
   text-transform: uppercase;
@@ -31,7 +40,7 @@ picture img {
 
 .hero-text {
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--hero-text-background);
 }
 
 .hero-text h2 {
@@ -52,9 +61,18 @@ picture img {
   line-height: 1.5;
 }
 
+.hero-text-data::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
 footer {
   text-align: center;
-  background-color: #C8102E;
+  background-color: var(--footer-background-color);
   color: #f7f4e9;
 }
 
@@ -85,9 +103,13 @@ footer p {
     text-align: left;
     margin: -10px -20px 10px -20px;
     padding: 10px 20px;
-    background-color: #0038A8;
+    background-color: var(--header-background-color);
     color: white;
   }
+
+  .hero-text-data::after {
+        display: none;
+    }
 
   .hero-text-weather {
     position: absolute;
