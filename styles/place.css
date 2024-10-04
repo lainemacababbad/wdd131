@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* These are the colors used */
 :root {
     --header-background-color: #0038A8;
@@ -11,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
+  font-family: "Playfair Display", serif;
 }
 
 header h1 {
