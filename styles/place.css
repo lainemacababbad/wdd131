@@ -1,11 +1,11 @@
 /* These are the colors used */
 :root {
-    --header-background-color: #0038A8;
-    --footer-background-color: #C8102E;
-    --background-color: #f4f4f4;
-    --hero-text-background: #ffffff;
-    --text-color: #333333;
-    --footer-text-color: #f7f4e9;
+  --header-background-color: #0038a8;
+  --footer-background-color: #c8102e;
+  --background-color: #f4f4f4;
+  --hero-text-background: #ffffff;
+  --text-color: #333333;
+  --footer-text-color: #f7f4e9;
 }
 body {
   margin: 0;
@@ -41,7 +41,6 @@ picture img {
 
 .hero-text {
   padding: 20px;
-  background-color: var(--hero-text-background);
 }
 
 .hero-text h2 {
@@ -63,12 +62,17 @@ picture img {
 }
 
 .hero-text-data::after {
-    content: "";
-    display: block;
-    width: 90%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+.weather-icon img {
+    width: 50%;
+    margin: 0;
 }
 
 footer {
@@ -86,7 +90,7 @@ footer p {
   .hero-text {
     padding: 0;
   }
-  
+
   .hero-image {
     position: relative;
   }
@@ -95,12 +99,13 @@ footer p {
     position: absolute;
     top: 10%;
     left: 16px;
-    background-color: rgba(255, 255, 0, 0.75);;
+    background-color: rgba(255, 255, 0, 0.75);
     padding: 10px;
     border-radius: 8px;
   }
 
-  .hero-text-data h2, .hero-text-weather h2 {
+  .hero-text-data h2,
+  .weather-icon, .weather-icon h2 {
     text-align: left;
     margin: -10px -20px 10px -20px;
     padding: 10px 20px;
@@ -109,8 +114,8 @@ footer p {
   }
 
   .hero-text-data::after {
-        display: none;
-    }
+    display: none;
+  }
 
   .hero-text-weather {
     position: absolute;
@@ -119,5 +124,18 @@ footer p {
     background-color: rgba(255, 255, 255, 0.75);
     padding: 10px;
     border-radius: 8px;
+  }
+
+  .weather-icon {
+    display: flex;
+  }
+
+  .weather-icon h2 {
+    margin: 0;
+  }
+
+  .weather-icon img {
+    width: 50px;
+    height: 50px;
   }
 }
