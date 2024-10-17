@@ -1,0 +1,97 @@
+main {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+h1 {
+  background-color: #6e8387;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  background-color: #b3ced5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
+
+label {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#product,
+#installationDate,
+#review,
+#name {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+}
+
+#review {
+  height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #6e8387;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #4f5e61;
+}
+
+footer {
+  color: #fcfafa;
+  background-color: #6e8387;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#lastModified {
+  font-style: italic;
+  color: #d1d1d1;
+}
+
+/* For review.html */
+.reviewNumbers {
+    margin-top: 25%;
+}
+
+/* Small Screen */
+@media (max-width: 768px) {
+  main {
+    width: auto;
+  }
+}

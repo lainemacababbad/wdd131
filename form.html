@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Lalaine Macababbad</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals | Lalaine Macababbad | W05 Assignment: Product Review Form" />
+    <meta name="author" content="Lalaine Macababbad" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>
+                    <label for="product">Product Name</label>
+                </legend>
+                <select name="product" id="product" required>
+                    <option value="" selected disabled>Choose a Product...</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="rating">Overall Rating</label>
+                </legend>
+                <div class="ratings">
+                    <div class="rating">
+                        <label for="onestar">&star;</label>
+                        <input type="radio" name="stars" id="onestar" required value="1" />
+                    </div>
+                    <div class="rating">
+                        <label for="twostar">&star;&star;</label>
+                        <input type="radio" name="stars" id="twostar" required value="2" />
+                    </div>
+                    <div class="rating">
+                        <label for="threestar">&star;&star;&star;</label>
+                        <input type="radio" name="stars" id="threestar" required value="3" />
+                    </div>
+                    <div class="rating">
+                        <label for="fourstar">&star;&star;&star;&star;</label>
+                        <input type="radio" name="stars" id="fourstar" required value="4" />
+                    </div>
+                    <div class="rating">
+                        <label for="fivestar">&star;&star;&star;&star;&star;</label>
+                        <input type="radio" name="stars" id="fivestar" required value="5" />
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="installationDate">Date of Installation</label>
+                </legend>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="usefulFeatures">Which features did you find useful in the product? (Check all that
+                        apply)</label>
+                </legend>
+                <div>
+                    <input type="checkbox" id="feature1" name="feature1" value="Durability">
+                    <label for="feature1">Durability</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="feature2" name="feature2" value="Ease of Use">
+                    <label for="feature2">Ease of Use</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="feature3" name="feature3" value="Performance">
+                    <label for="feature3">Performance</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="feature4" name="feature4" value="Design">
+                    <label for="feature4">Design</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="review">Written Review (Optional)</label>
+                </legend>
+                <textarea name="review" id="review"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="name">Your Name (Optional)</label>
+                </legend>
+                <input type="text" name="name" id="name">
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> | Lalaine Macababbad |
+            Philippines/Canada
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
