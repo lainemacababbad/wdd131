@@ -45,16 +45,29 @@ const productSelect = document.getElementById('product');
  // this is where it populates the select element
  products.forEach(product => {
     const option = document.createElement('option');
-    option.value = product.id; // Use the product id for the value attribute
-    option.textContent = product.name; // Use the product name for the display text
-    productSelect.appendChild(option); // Add the option to the select element
+    option.value = product.id;
+    option.textContent = product.name;
+    productSelect.appendChild(option);
 });
 
-// number of reviews completed
-let reviewCount = localStorage.getItem('reviewCount') || 0;
-
-reviewCount = parseInt(reviewCount) + 1;
-
-localStorage.setItem('reviewCount', reviewCount);
-
-document.getElementById('reviewCount').textContent = reviewCount;
+// review count
+function updateReviewCount() {
+    let reviewCount = localStorage.getItem('reviewCount') || 0;
+    reviewCount = parseInt(reviewCount) + 1; // adds one
+    localStorage.setItem('reviewCount', reviewCount); // this is where the updated count
+    return reviewCount;
+  }
+  
+  // Handle form submission
+  const form = document.querySelector('form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const reviewCount = updateReviewCount();
+    window.location.href = 'review.html'; // leads to the review.html file
+  });
+  
+  // Update review count on review.html
+  document.addEventListener('DOMContentLoaded', () => {
+    const reviewCount = localStorage.getItem('reviewCount') || 0;
+    document.getElementById('reviewCount').textContent = reviewCount; // shows the count
+  });
