@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Root Variables */
+:root {
+  --primary-color: #ce1126; /* Header and footer color */
+  --secondary-color: #0038a8; /* Navigation background color */
+  --button-color: #FCD116; /* Button background color */
+  --background-color: #EFE5D5; /* About and street food background */
+  --featured-background-color: #E1D8CA; /* Featured dishes background */
+  --text-color: #000; /* Default text color */
+  --heading-color: #0038A8; /* Headings color */
+  --font-header: "Poltawski Nowy", cursive; /* Header font */
+  --font-title: "Archivo Black", sans-serif; /* Title font */
+  --font-body: "Poppins", sans-serif; /* Body font */
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  color: white;
+  font-size: 48px;
+  margin: 0;
+  font-family: var(--font-header);
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: var(--font-title);
+}
+
+/* Hero */
+.hero img {
+  width: 100%;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: var(--font-title);
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.hero-button {
+  background-color: var(--button-color);
+  color: black;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--font-title);
+}
+
+/* About Section */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.about h3 {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-family: var(--font-title);
+  padding-top: 2em;
+}
+
+.about-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.about-images img {
+  width: 30%;
+  height: auto;
+}
+
+/* Featured Dishes Section */
+.featured {
+  background-color: var(--featured-background-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.featured h3 {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-family: var(--font-title);
+  padding-bottom: 20px;
+}
+
+.featured-button {
+  background-color: var(--button-color);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-title);
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.featured-images img {
+  width: 100%;
+  height: auto;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: var(--font-title);
+  color: var(--text-color);
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Street Food Section */
+.street-food {
+  background-color: var(--background-color);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.street-food h3 {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-family: var(--font-title);
+}
+
+.street-food p {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.street-food-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.street-food-button {
+  background-color: var(--button-color);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-family: var(--font-header);
+  padding: 20px;
+  margin: 0;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  nav li {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* Hero */
+  .hero img {
+    height: auto;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    padding: 0.5rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .hero-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
+  /* About Section */
+  .about {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .about h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .about-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-images img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Featured Dishes Section */
+  .featured {
+    padding: 1rem;
+  }
+
+  .featured h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Street Food Section */
+  .street-food {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .street-food img {
+    width: 100%;
+  }
+
+  .street-food h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .street-food p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 14px;
+    padding: 1rem;
+  }
+}
