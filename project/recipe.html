@@ -16,9 +16,9 @@
         <h1>Pinoy Flavors</h1>
         <nav>
             <ul>
-                <li><a href="/project/project.html">Home</a></li>
-                <li><a href="/project/recipe.html">Recipes</a></li>
-                <li><a href="#">Featured Dishes</a></li>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="form.html">Submit a Recipe</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +26,7 @@
         <div class="recipe-card">
             <div class="adobo-recipe">
                 <h1 class="recipe-name">Pork Adobo</h1>
-                <img src="images/adobo.webp" alt="Adobo" class="recipe-image">
+                <img src="images/adobo.webp" alt="Adobo" class="recipe-image" loading="lazy">
                 <div class="recipe-info">
                     <h2>Ingredients</h2>
                     <ul class="ingredients">
@@ -59,7 +59,7 @@
         <div class="recipe-card">
             <div class="kinilaw-recipe">
                 <h1 class="recipe-name">Kinilaw</h1>
-                <img src="images/kinilaw.webp" alt="Kinilaw" class="recipe-image">
+                <img src="images/kinilaw.webp" alt="Kinilaw" class="recipe-image" loading="lazy">
                 <div class="recipe-info">
                     <h2>Ingredients</h2>
                     <ul class="ingredients">
@@ -87,7 +87,7 @@
         <div class="recipe-card">
             <div class="binakol-recipe">
                 <h1 class="recipe-name">Chicken Binakol</h1>
-                <img src="images/binakol.webp" alt="Chicken Binakol" class="recipe-image">
+                <img src="images/binakol.webp" alt="Chicken Binakol" class="recipe-image" loading="lazy">
                 <div class="recipe-info">
                     <h2>Ingredients</h2>
                     <ul class="ingredients">
@@ -115,7 +115,43 @@
                 </div>
             </div>
         </div>
+
+        <div class="recipe-card">
+            <div class="sinigang-recipe">
+                <h1 class="recipe-name">Pork Sinigang</h1>
+                <img src="images/sinigang.webp" alt="Pork Sinigang" class="recipe-image" loading="lazy">
+                <div class="recipe-info">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients">
+                        <li>1 lb pork (bone-in, cut into pieces)</li>
+                        <li>2 cups water or broth</li>
+                        <li>1 onion, chopped</li>
+                        <li>2-3 cloves garlic, minced</li>
+                        <li>1 thumb-sized piece of ginger, sliced</li>
+                        <li>2-3 green chilies</li>
+                        <li>Salt and pepper, to taste</li>
+                        <li>2-3 tbsp fish sauce (optional)</li>
+                        <li>Chopped green onions (for garnish)</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol class="instructions">
+                        <li>Sauté onion, garlic, and ginger in oil until fragrant.</li>
+                        <li>Add pork; cook until browned.</li>
+                        <li>Pour in water or broth; bring to a boil, then simmer until tender (about 20-30 minutes).
+                        </li>
+                        <li>Add chilies; season with salt, pepper, and fish sauce. Simmer for 5-10 minutes.</li>
+                        <li>Serve hot, garnished with green onions and enjoy with rice.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> | Pinoy Flavors
+          </p>
+          <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

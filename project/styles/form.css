@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Root Variables */
+:root {
+  --primary-color: #ce1126; /* Header and footer color */
+  --secondary-color: #0038a8; /* Navigation background color */
+  --button-color: #FCD116; /* Button background color */
+  --background-color: #EFE5D5; /* About and street food background */
+  --featured-background-color: #E1D8CA; /* Featured dishes background */
+  --text-color: #000; /* Default text color */
+  --heading-color: #0038A8; /* Headings color */
+  --font-header: "Poltawski Nowy", cursive; /* Header font */
+  --font-title: "Archivo Black", sans-serif; /* Title font */
+  --font-body: "Poppins", sans-serif; /* Body font */
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--font-title);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: var(--font-body);
+}
+
+/* This is for the Ingredients */
+.ingredients {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    margin-right: 10px;
+    font-family: var(--font-body);
+}
+
+button[type="button"] {
+    font-family: var(--font-body);
+}
+/* End */
+
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--heading-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-family: var(--font-body);
+}
+
+/* thankyou.html */
+.thank-you {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you h1 {
+    color: #333;
+}
+
+.thank-you p {
+    color: #555;
+}
+
+

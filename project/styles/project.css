@@ -156,6 +156,11 @@ nav a {
   height: auto;
 }
 
+.featured-images a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 h4 {
   font-size: 18px;
   font-family: var(--font-title);
@@ -213,6 +218,42 @@ footer p {
   font-family: var(--font-header);
   padding: 20px;
   margin: 0;
+}
+
+/* View Recipe Section - Featured Dishes */
+.recipe {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+.recipe-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.recipe-image img {
+    width: 100%;
+}
+
+.food-recipe {
+    background-color: var(--featured-background-color);
+    padding: 20px;
+}
+
+.food-recipe h1 {
+    font-family: var(--font-title);
+    color: var(--heading-color);
+}
+
+.food-recipe h2 {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--heading-color);
+}
+
+.ingredients, .instructions {
+    font-family: var(--font-body);
+    font-size: 12px;
 }
 
 /* Mobile View */
@@ -291,6 +332,10 @@ footer p {
   .images {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .recipe-card {
+    grid-template-columns: 1fr;
   }
 
   /* Street Food Section */

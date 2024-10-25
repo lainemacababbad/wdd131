@@ -60,7 +60,7 @@ main {
   background-color: var(--featured-background-color);
   padding: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* Recipe Card */
@@ -109,52 +109,70 @@ h2 {
 .ingredients li,
 .instructions li {
   margin: 5px 0;
-  font-family: var(--font-body); 
-    font-size: 12px;
+  font-family: var(--font-body);
+  font-size: 12px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-family: var(--font-header);
+  padding: 20px;
+  margin: 0;
 }
 
 /* Mobile View */
 @media (max-width: 768px) {
-    /* Header Styles */
-    header {
-      grid-template-columns: 1fr;
-      padding: 1rem;
-    }
-  
-    header h1 {
-      font-size: 32px;
-    }
-
-    nav ul {
-      flex-direction: column;
-      padding: 0;
-      align-items: center;
-      width: 100%;
-    }
-  
-    nav li {
-      width: 100%;
-    }
-  
-    /* Recipe Section */
-    main {
-      grid-template-columns: 1fr;
-    }
-  
-    .recipe-card {
-      padding: 15px;
-      width: 500px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-      border-radius: 10px;
-    }
-  
-    .recipe-title {
-      font-size: 20px;
-    }
-  
-    .ingredients li,
-    .instructions li {
-      font-size: 14px;
-    }
+  /* Header Styles */
+  header {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
-  
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  /* Recipe Section */
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-card {
+    padding: 15px;
+    width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .recipe-title {
+    font-size: 20px;
+  }
+
+  .ingredients li,
+  .instructions li {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 14px;
+    padding: 1rem;
+  }
+}

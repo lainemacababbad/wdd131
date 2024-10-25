@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Lalaine Macababbad</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Lalaine Macababbad | Website Project" />
+    <meta name="author" content="Lalaine Macababbad" />
+    <link rel="stylesheet" href="styles/project.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pinoy Flavors</h1>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="form.html">Submit a Recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form">
+        <h1>Submit a Recipe</h1>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required placeholder="Enter the name of the recipe">
+            </fieldset>
+            <fieldset>
+                <label for="ingredients">Ingredients:</label>
+                <ul id="ingredients-list" class="ingredients">
+                    <li>
+                        <input type="text" name="ingredients" required placeholder="Enter an ingredient">
+                        <button type="button" onclick="removeIngredient(this)">Remove</button>
+                    </li>
+                </ul>
+                <button type="button" onclick="addIngredient()">Add another ingredient</button>
+            </fieldset>
+            <fieldset>
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="5" required placeholder="Enter instructions"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="image-upload">Upload an Image (optional):</label>
+                <input type="file" id="image-upload" name="image-upload" accept="image/*">
+            </fieldset>
+            <fieldset>
+                <label for="name">Your Name (optional):</label>
+                <input type="text" id="name" name="name">
+            </fieldset>
+            <fieldset>
+                <label for="email">Your Email (optional, for questions):</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </fieldset>
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            © <span id="currentyear"></span> | Pinoy Flavors
+          </p>
+          <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

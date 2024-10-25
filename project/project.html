@@ -16,9 +16,9 @@
     <h1>Pinoy Flavors</h1>
     <nav>
       <ul>
-        <li><a href="/project/project.html">Home</a></li>
-        <li><a href="/project/recipe.html">Recipes</a></li>
-        <li><a href="#">Featured Dishes</a></li>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="form.html">Submit a Recipe</a></li>
       </ul>
     </nav>
   </header>
@@ -58,27 +58,27 @@
           <h4>Adobo</h4>
           <p>Pork stewed in soy sauce
             and vinegar</p>
-          <button class="featured-button">View Recipe</button>
+          <button class="featured-button"><a href="adobo.html">View Recipe</a></button>
         </div>
         <div class="featured-images">
           <img src="images/kinilaw.webp" alt="Kinilaw" loading="lazy">
           <h4>Kinilaw</h4>
           <p>Fresh fish marinated in vinegar,
             calamansi, and spices</p>
-          <button class="featured-button">View Recipe</button>
+          <button class="featured-button"><a href="kinilaw.html">View Recipe</a></button>
         </div>
         <div class="featured-images">
           <img src="images/binakol.webp" alt="Chicken Binakol" loading="lazy">
           <h4>Chicken Binakol</h4>
           <p>Chicken simmered in coconut water
             and young coconut meat</p>
-          <button class="featured-button">View Recipe</button>
+          <button class="featured-button"><a href="binakol.html">View Recipe</a></button>
         </div>
         <div class="featured-images">
           <img src="images/sinigang.webp" alt="Pork Sinigang" loading="lazy">
           <h4>Pork Sinigang</h4>
           <p>Pork simmered in tamarind broth with tender vegetables.</p>
-          <button class="featured-button">View Recipe</button>
+          <button class="featured-button"><a href="sinigang.html">View Recipe</a></button>
         </div>
       </div>
     </section>
@@ -98,7 +98,10 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Pinoy Flavors</p>
+    <p>
+      © <span id="currentyear"></span> | Pinoy Flavors
+    </p>
+    <p id="lastModified"></p>
   </footer>
 </body>
 
