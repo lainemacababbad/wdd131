@@ -1,60 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-/* Root Variables */
-:root {
-  --primary-color: #ce1126; /* Header and footer color */
-  --secondary-color: #0038a8; /* Navigation background color */
-  --button-color: #fcd116; /* Button background color */
-  --background-color: #efe5d5; /* About and street food background */
-  --featured-background-color: #e1d8ca; /* Featured dishes background */
-  --text-color: #000; /* Default text color */
-  --heading-color: #0038a8; /* Headings color */
-  --font-header: "Poltawski Nowy", cursive; /* Header font */
-  --font-title: "Archivo Black", sans-serif; /* Title font */
-  --font-body: "Poppins", sans-serif; /* Body font */
-}
-
-/* Header */
-header {
-  background-color: var(--primary-color);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem;
-  position: relative;
-  z-index: 1;
-}
-
-header h1 {
-  color: white;
-  font-size: 48px;
-  margin: 0;
-  font-family: var(--font-header);
-  text-transform: uppercase;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav li {
-  margin: 0 1rem;
-  background-color: var(--secondary-color);
-  border-radius: 5px;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-family: var(--font-title);
-}
-
 /* Main Section */
 main {
   background-color: var(--featured-background-color);
@@ -113,42 +56,8 @@ h2 {
   font-size: 12px;
 }
 
-/* Footer */
-footer {
-  background-color: var(--primary-color);
-  text-align: center;
-}
-
-footer p {
-  color: white;
-  font-family: var(--font-header);
-  padding: 20px;
-  margin: 0;
-}
-
 /* Mobile View */
 @media (max-width: 768px) {
-  /* Header Styles */
-  header {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  header h1 {
-    font-size: 32px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 0;
-    align-items: center;
-    width: 100%;
-  }
-
-  nav li {
-    width: 100%;
-  }
-
   /* Recipe Section */
   main {
     grid-template-columns: 1fr;
@@ -168,11 +77,5 @@ footer p {
   .ingredients li,
   .instructions li {
     font-size: 14px;
-  }
-
-  /* Footer */
-  footer p {
-    font-size: 14px;
-    padding: 1rem;
   }
 }

@@ -6,11 +6,11 @@
 :root {
   --primary-color: #ce1126; /* Header and footer color */
   --secondary-color: #0038a8; /* Navigation background color */
-  --button-color: #FCD116; /* Button background color */
-  --background-color: #EFE5D5; /* About and street food background */
-  --featured-background-color: #E1D8CA; /* Featured dishes background */
+  --button-color: #fcd116; /* Button background color */
+  --background-color: #efe5d5; /* About and street food background */
+  --featured-background-color: #e1d8ca; /* Featured dishes background */
   --text-color: #000; /* Default text color */
-  --heading-color: #0038A8; /* Headings color */
+  --heading-color: #0038a8; /* Headings color */
   --font-header: "Poltawski Nowy", cursive; /* Header font */
   --font-title: "Archivo Black", sans-serif; /* Title font */
   --font-body: "Poppins", sans-serif; /* Body font */
@@ -20,7 +20,7 @@
 header {
   background-color: var(--primary-color);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
   padding: 1rem;
   position: relative;
   z-index: 1;
@@ -34,18 +34,11 @@ header h1 {
   text-transform: uppercase;
 }
 
-nav ul {
-  list-style: none;
+/* Navigation and Hamburger Menu */
+nav {
   display: flex;
-  justify-content: space-around;
-}
-
-nav li {
-  margin: 0 1rem;
-  background-color: var(--secondary-color);
-  border-radius: 5px;
-  padding: 0.5rem;
-  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
@@ -54,6 +47,32 @@ nav a {
   font-size: 16px;
   font-family: var(--font-title);
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+/* End of Nav and Hamburger Menu */
 
 /* Hero */
 .hero img {
@@ -157,8 +176,8 @@ nav a {
 }
 
 .featured-images a {
-    text-decoration: none;
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 h4 {
@@ -222,38 +241,39 @@ footer p {
 
 /* View Recipe Section - Featured Dishes */
 .recipe {
-    background-color: var(--background-color);
-    padding: 20px;
+  background-color: var(--background-color);
+  padding: 20px;
 }
 .recipe-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .recipe-image img {
-    width: 100%;
+  width: 100%;
 }
 
 .food-recipe {
-    background-color: var(--featured-background-color);
-    padding: 20px;
+  background-color: var(--featured-background-color);
+  padding: 20px;
 }
 
 .food-recipe h1 {
-    font-family: var(--font-title);
-    color: var(--heading-color);
+  font-family: var(--font-title);
+  color: var(--heading-color);
 }
 
 .food-recipe h2 {
-    font-family: var(--font-body);
-    font-size: 15px;
-    color: var(--heading-color);
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--heading-color);
 }
 
-.ingredients, .instructions {
-    font-family: var(--font-body);
-    font-size: 12px;
+.ingredients,
+.instructions {
+  font-family: var(--font-body);
+  font-size: 12px;
 }
 
 /* Mobile View */
@@ -268,16 +288,44 @@ footer p {
     font-size: 32px;
   }
 
-  nav ul {
+  /* Hamburger Menu */
+  .hamburger {
+    display: flex;
     flex-direction: column;
-    padding: 0;
-    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
-  nav li {
-    width: 100%;
-    margin: 0.5rem 0;
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
   }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0.5rem 0;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+  }
+
+  .menu li a {
+    color: white;
+  }
+  /* End of Nav and Hamburger Menu */
 
   /* Hero */
   .hero img {
