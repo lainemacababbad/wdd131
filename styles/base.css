@@ -59,6 +59,15 @@ main {
   color: #283618;
 }
 
+.card a {
+  text-decoration: none;
+  color: #283618;
+}
+
+.card a:hover {
+  color: #3d405b;
+}
+
 #about,
 #resources {
   background-color: #4b636e;
@@ -105,10 +114,10 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #ffffff; /* Ensures contrast on links */
+  color: #ffffff;
 }
 
 #lastModified {
   font-style: italic;
-  color: #ffffff; /* Changed to white for better visibility */
+  color: #ffffff;
 }
