@@ -1,7 +1,9 @@
 @import url("https://use.typekit.net/pao3byg.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #283618;
@@ -9,8 +11,8 @@ body {
 }
 
 header {
-  color: #fcfafa;
-  background-color: #6e8387;
+  color: #ffffff;
+  background-color: #4b636e;
   text-align: center;
   padding-top: 20px;
 }
@@ -38,7 +40,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #fcfafa;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -53,21 +55,23 @@ main {
   box-shadow: 5px 5px 2.5px #283618;
   padding: 25px;
   margin: 10px;
-  background-color: #c8d3d5;
+  background-color: #b0c4c1;
+  color: #283618;
 }
 
-#about, #resources {
-  background-color: #6e8387;
-  color: #fcfafa;
+#about,
+#resources {
+  background-color: #4b636e;
+  color: #ffffff;
   font-weight: bold;
   padding: 5px;
   text-align: center;
 }
 
 #about-me {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
 }
 
 img {
@@ -76,30 +80,35 @@ img {
 }
 
 #country {
-    border-bottom: 1px solid #6e8387;
-    text-align: center;
+  border-bottom: 1px solid #4b636e;
+  text-align: center;
 }
 
 #country-info {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
 }
 
 #country-info img {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
 
 footer {
-    color: #fcfafa;
-    background-color: #6e8387;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+  color: #ffffff;
+  background-color: #4b636e;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff; /* Ensures contrast on links */
 }
 
 #lastModified {
-    font-style: italic;
-    color: #d1d1d1;
+  font-style: italic;
+  color: #ffffff; /* Changed to white for better visibility */
 }
